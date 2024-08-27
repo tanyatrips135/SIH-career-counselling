@@ -73,8 +73,9 @@ ul {
     color: blueviolet;
 }
 
-.homepage {
+.homepagebg {
     background-image: url("cc1.jpg");
+    background-size: 70%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom;
@@ -99,4 +100,10 @@ footer {
     position: fixed;
     bottom: 0;
     text-align: center;
+    font-size: ;
+    padding: ;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
