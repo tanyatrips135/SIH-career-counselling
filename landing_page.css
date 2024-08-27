@@ -81,7 +81,6 @@ ul {
     background-position: bottom;
 }
 
-
 .mainhead{
     width: inherit;
     font-size: 30px;
@@ -99,11 +98,27 @@ ul {
 footer {
     position: fixed;
     bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 25%;
+}
+
+footer a{
     text-align: center;
-    font-size: ;
-    padding: ;
+    margin: 15px;
+    padding: auto;
+    font-size: 25px;
+    margin: 5px;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer a:active, a:visited {
+    text-decoration: none;
 }
