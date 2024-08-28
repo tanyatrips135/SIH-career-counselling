@@ -17,7 +17,7 @@ words = []
 classes = []
 documents = []
 ignore_words = ["?", "!"]
-data_file = open(r"C:\Users\pg401\venv\intents.json").read()
+data_file = open(r"intents.json").read()
 intents = json.loads(data_file)
 print("Ok")
 for intent in intents["intents"]:

@@ -10,14 +10,14 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
 model=load_model("chatbot_model.h5")
-intents=json.loads(open(r"C:\Users\pg401\venv\intents.json").read())
-words=pickle.load(open(r"C:\Users\pg401\words.pkl","rb"))
-classes=pickle.load(open(r"C:\Users\pg401\classes.pkl","rb"))
+intents=json.loads(open(r"intents.json").read())
+words=pickle.load(open(r"words.pkl","rb"))
+classes=pickle.load(open(r"classes.pkl","rb"))
 
 app=Flask(__name__)
 @app.route("/")
 def home():
-    return render_template("Test2_HTML.html")
+    return render_template("chatbot.html")
 
 @app.route("/get",methods=["POST"])
 def chatbot_response():
